@@ -1,0 +1,27 @@
+.about {
+    background-color: #f4efe9;
+}
+
+.logo-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #d1423c;
+    font-family: 'Baloo Thambi', cursive;
+    font-size: 32px;
+}
+
+.nav {
+    margin: 0;
+    list-style: none;
+    max-width: 200px;
+    padding: 0;
+}
+
+.nav > li > a {
+    text-decoration: none;
+    font-size: 24px;
+}
