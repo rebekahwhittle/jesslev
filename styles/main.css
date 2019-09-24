@@ -1,27 +1,46 @@
 .about {
-    background-color: #f4efe9;
-}
+  background-color: #f4efe9; }
 
-.logo-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+.work {
+  background-color: #d1423c; }
 
-.logo {
-    color: #d1423c;
-    font-family: 'Baloo Thambi', cursive;
+.contact {
+  background-color: #285ab7; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px; }
+  .container .logo {
+    font-family: "Baloo Thambi", cursive;
     font-size: 32px;
-}
-
-.nav {
-    margin: 0;
-    list-style: none;
+    color: #d1423c;
     max-width: 200px;
-    padding: 0;
-}
+    margin: 0;
+    padding-left: 16px;
+    line-height: 1.4;
+    z-index: 1; }
+  .container .main {
+    max-width: 1200px;
+    height: 500px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    position: relative;
+    bottom: 92px;
+    left: 124px; }
+  .container .nav {
+    list-style: none;
+    padding-left: 16px;
+    margin: 0;
+    position: relative;
+    bottom: 32px; }
+    .container .nav a {
+      text-decoration: none;
+      color: #d1423c;
+      font-size: 16px;
+      font-family: "Baloo Thambi", cursive; }
+    .container .nav a.active {
+      font-size: 24px; }
 
-.nav > li > a {
-    text-decoration: none;
-    font-size: 24px;
-}
+/*# sourceMappingURL=main.css.map */
