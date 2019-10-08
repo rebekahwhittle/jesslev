@@ -1,63 +1,17 @@
-@import "components/variables";
-
-.about {
-    background-color: $tan-jl;
+// BODY 
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
 }
 
-.work {
-    background-color: $red-jl;
-}
+// BASE
+@import "base/variables";
+@import "base/mixins";
 
-.contact {
-    background-color: $blue-jl;
-}
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+// COMPONENTS
+@import "components/navigation";
+@import "components/container";
 
-    padding: 32px;
-
-    .logo {
-        font-family: $font-baloo;
-        font-size: 32px;
-        color: $red-jl;
-        max-width: 200px;
-        margin: 0;
-        padding-left: 16px;
-        line-height: 1.4;
-        z-index: 1;
-    }
-
-    .main {
-        max-width: 1200px;
-        height: 500px;
-
-        border-radius: 4px;
-        background-color: $white;
-
-        position: relative;
-        bottom: 92px;
-        left: 124px;
-    }
-
-    .nav {
-        list-style: none;
-        padding-left: 16px;
-        margin: 0;
-        position: relative;
-        bottom: 32px;
-
-        a {
-            text-decoration: none;
-            color: $red-jl;
-            font-size: 16px;
-            font-family: $font-baloo;
-        }
-
-        a.active {
-            font-size: 24px;
-        }
-    }
-}

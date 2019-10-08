@@ -1,0 +1,20 @@
+// STRIP TAGS FROM WEBKIT STYLES 
+@mixin a-tag () {
+   text-decoration: none;
+}
+
+@mixin ul-tag () {
+    margin: 0;
+    list-style: none;
+}
+
+@mixin li-tag () {
+    display: block;
+}
+
+// FLEX DIRECTION JUSTIFY
+@mixin flex-direction-justify ($flex, $direction, $justify) {
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}

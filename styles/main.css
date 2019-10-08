@@ -1,46 +1,54 @@
-.about {
-  background-color: #f4efe9; }
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0; }
 
-.work {
-  background-color: #d1423c; }
-
-.contact {
-  background-color: #285ab7; }
-
-.container {
+.navigation-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 32px; }
-  .container .logo {
-    font-family: "Baloo Thambi", cursive;
-    font-size: 32px;
-    color: #d1423c;
-    max-width: 200px;
+  min-height: 100vh;
+  max-width: 230px;
+  overflow: scroll; }
+  .navigation-wrapper .logo {
+    padding-top: 4rem;
+    padding-left: 7rem; }
+    .navigation-wrapper .logo a {
+      text-decoration: none; }
+  .navigation-wrapper .navigation {
+    padding-bottom: 4rem;
+    padding-left: 7rem;
     margin: 0;
-    padding-left: 16px;
-    line-height: 1.4;
-    z-index: 1; }
-  .container .main {
-    max-width: 1200px;
-    height: 500px;
-    border-radius: 4px;
-    background-color: #FFFFFF;
-    position: relative;
-    bottom: 92px;
-    left: 124px; }
-  .container .nav {
-    list-style: none;
-    padding-left: 16px;
-    margin: 0;
-    position: relative;
-    bottom: 32px; }
-    .container .nav a {
-      text-decoration: none;
-      color: #d1423c;
-      font-size: 16px;
-      font-family: "Baloo Thambi", cursive; }
-    .container .nav a.active {
-      font-size: 24px; }
+    list-style: none; }
+    .navigation-wrapper .navigation .nav-tab {
+      display: block; }
+      .navigation-wrapper .navigation .nav-tab a {
+        text-decoration: none; }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100vh; }
+
+.wrapper {
+  max-width: 1024px; }
+
+.container.about {
+  background-color: #f4efe9;
+  background-image: url("../assets/about_jesslev.png");
+  background-size: 100% 100%; }
+
+.container.work {
+  background-color: #d1423c;
+  background-image: url("../assets/work_jesslev.png");
+  background-size: 100% 100%; }
+
+.container.contact {
+  background-color: #285ab7;
+  background-image: url("../assets/contact_jesslev.png");
+  background-size: 100% 100%; }
 
 /*# sourceMappingURL=main.css.map */
