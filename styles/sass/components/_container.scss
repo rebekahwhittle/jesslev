@@ -2,6 +2,8 @@
     @include flex-direction-justify (flex, row, space-between);
     width: 100%;
     min-height: 100vh;
+    // opacity: 1; 
+    // transform: translate3d(0px, 100%, 0px);
 }
 
 .wrapper {

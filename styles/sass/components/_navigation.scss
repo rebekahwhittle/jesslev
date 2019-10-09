@@ -5,6 +5,8 @@
     max-width: 230px;
     overflow: scroll;
     z-index: 1;
+    position: relative;
+    left: 1.5rem;
 
     @media screen and (max-width: 1024px) {
         min-height: 80vh;
@@ -15,6 +17,7 @@
         max-width: 100%;
         justify-content: space-between;
         min-height: 0;
+        left: 0;
     }
 
     .logo {

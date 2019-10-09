@@ -1,0 +1,24 @@
+#about-page {
+    .image-content {
+        width: 60%;
+        max-height: 83vh;
+
+        @include padding (6rem, 2rem, 2rem, 2rem);
+    }
+
+    .text-content {
+        width: 40%;
+        @include padding (5.5rem, 2rem, 2rem, null);
+
+        h2 {
+            font-size: 48px;
+            font-family: 'Montserrat';
+            padding-bottom: 1rem;
+        }
+        p {
+            font: 24px;
+            font-family: 'Montserrat';
+            line-height: 24px;
+        }
+    }
+}
