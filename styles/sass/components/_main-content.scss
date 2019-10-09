@@ -8,20 +8,6 @@
         margin-top: 0;
     }
 
-    .svg-content {
-        position: absolute;
-        top: -4%;
-        right: 46%;
-        width: 23%;
-        height: 59px;
-        transform: rotate(10deg);
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-    }
-
     .content-container {
         @include flex-direction-justify (flex, row, space-between);
         width: 100%;

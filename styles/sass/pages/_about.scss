@@ -1,9 +1,19 @@
 #about-page {
+    // @media screen and (max-height: 1240px) {
+    //     flex-direction: column;
+    // }
+
     .image-content {
         width: 60%;
         max-height: 83vh;
 
         @include padding (6rem, 2rem, 2rem, 2rem);
+
+        @media screen and (max-width: 1240px) {
+            width: 130%;
+            margin: 0 auto;
+            padding: 2rem;
+        }
     }
 
     .text-content {
@@ -15,10 +25,17 @@
             font-family: 'Montserrat';
             padding-bottom: 1rem;
         }
+
         p {
             font: 24px;
             font-family: 'Montserrat';
             line-height: 24px;
+        }
+
+        @media screen and (max-width: 1240px) {
+            width: 80%;
+            margin: 0 auto;
+            // padding: 2rem;
         }
     }
 }
