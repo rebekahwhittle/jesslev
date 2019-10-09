@@ -5,9 +5,16 @@
     max-width: 230px;
     overflow: scroll;
     z-index: 1;
-    
+
     @media screen and (max-width: 1024px) {
         min-height: 80vh;
+    }
+
+    @media screen and (max-width: 740px) {
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: space-between;
+        min-height: 0;
     }
 
     .logo {
@@ -18,9 +25,10 @@
             @include a-tag ();
         }
 
-        @media screen and (max-width: 700px) {
-            padding-left: 0;
-            padding-top: 0;
+        @media screen and (max-width: 740px) {
+            flex: 1;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
         }
     }
 
@@ -36,11 +44,19 @@
             a {
                 @include a-tag ();
             }
+
+            @media screen and (max-width: 740px) {
+                display: inline-block;
+            }
         }
 
-        @media screen and (max-width: 700px) {
-            padding-left: 0;
-            padding-top: 0;
+        @media screen and (max-width: 1024px) {
+            padding-bottom: 0;
+        }
+
+        @media screen and (max-width: 740px) {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
         }
     }
 }

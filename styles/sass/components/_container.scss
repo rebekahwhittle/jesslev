@@ -5,13 +5,27 @@
 }
 
 .wrapper {
-    width: 70%;
+    width: 80%;
     min-height: 80vh;
     margin: auto;
 
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr;
+
+    @media screen and (min-width: 1440px) {
+        width: 1240px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 740px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 1rem;
+    }
 }
 
 .container.about {

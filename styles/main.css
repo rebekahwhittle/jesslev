@@ -15,15 +15,22 @@
   @media screen and (max-width: 1024px) {
     .navigation-wrapper {
       min-height: 80vh; } }
+  @media screen and (max-width: 740px) {
+    .navigation-wrapper {
+      flex-direction: row;
+      max-width: 100%;
+      justify-content: space-between;
+      min-height: 0; } }
   .navigation-wrapper .logo {
     padding-top: 4rem;
     padding-left: 0; }
     .navigation-wrapper .logo a {
       text-decoration: none; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 740px) {
       .navigation-wrapper .logo {
-        padding-left: 0;
-        padding-top: 0; } }
+        flex: 1;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem; } }
   .navigation-wrapper .navigation {
     padding-bottom: 4rem;
     padding-left: 0;
@@ -33,10 +40,16 @@
       display: block; }
       .navigation-wrapper .navigation .nav-tab a {
         text-decoration: none; }
-    @media screen and (max-width: 700px) {
+      @media screen and (max-width: 740px) {
+        .navigation-wrapper .navigation .nav-tab {
+          display: inline-block; } }
+    @media screen and (max-width: 1024px) {
       .navigation-wrapper .navigation {
-        padding-left: 0;
-        padding-top: 0; } }
+        padding-bottom: 0; } }
+    @media screen and (max-width: 740px) {
+      .navigation-wrapper .navigation {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem; } }
 
 .container {
   display: flex;
@@ -46,12 +59,23 @@
   min-height: 100vh; }
 
 .wrapper {
-  width: 70%;
+  width: 80%;
   min-height: 80vh;
   margin: auto;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr; }
+  @media screen and (min-width: 1440px) {
+    .wrapper {
+      width: 1240px; } }
+  @media screen and (max-width: 1024px) {
+    .wrapper {
+      width: 90%; } }
+  @media screen and (max-width: 740px) {
+    .wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      margin-top: 1rem; } }
 
 .container.about {
   background-color: #f4efe9;
@@ -73,6 +97,10 @@
   margin-top: 4rem;
   position: relative;
   right: 1.5rem; }
+  @media screen and (max-width: 740px) {
+    .main-content {
+      right: 0;
+      margin-top: 0; } }
   .main-content .content-container {
     display: flex;
     flex-direction: row;
