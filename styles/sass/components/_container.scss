@@ -2,27 +2,31 @@
     @include flex-direction-justify (flex, row, space-between);
     width: 100%;
     min-height: 100vh;
-
 }
 
 .wrapper {
-    max-width: 1024px;
+    max-width: 1240px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
 }
 
 .container.about {
     background-color: $tan-300-jl;
-    background-image: url('../assets/svg/about_jesslev.svg');
-    background-size: 100% 100%;
+    background-image: url('../assets/svg/about-jesslev.svg');
+    background-size: cover;
 }
 
 .container.work {
     background-color: $red-300-jl;
-    background-image: url('../assets/work_jesslev.png');
-    background-size: 100% 100%;
+    background-image: url('../assets/svg/work-jesslev.svg');
+    background-size: cover;
 }
 
 .container.contact {
     background-color: $blue-300-jl;
-    background-image: url('../assets/contact_jesslev.png');
-    background-size: 100% 100%;
+    background-image: url('../assets/svg/contact-jesslev.svg');
+    background-size: cover;
 }

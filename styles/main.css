@@ -10,21 +10,33 @@
   justify-content: space-between;
   min-height: 100vh;
   max-width: 230px;
-  overflow: scroll; }
+  overflow: scroll;
+  z-index: 1; }
+  @media screen and (max-width: 1024px) {
+    .navigation-wrapper {
+      min-height: 80vh; } }
   .navigation-wrapper .logo {
     padding-top: 4rem;
-    padding-left: 7rem; }
+    padding-left: 0; }
     .navigation-wrapper .logo a {
       text-decoration: none; }
+    @media screen and (max-width: 700px) {
+      .navigation-wrapper .logo {
+        padding-left: 0;
+        padding-top: 0; } }
   .navigation-wrapper .navigation {
     padding-bottom: 4rem;
-    padding-left: 7rem;
+    padding-left: 0;
     margin: 0;
     list-style: none; }
     .navigation-wrapper .navigation .nav-tab {
       display: block; }
       .navigation-wrapper .navigation .nav-tab a {
         text-decoration: none; }
+    @media screen and (max-width: 700px) {
+      .navigation-wrapper .navigation {
+        padding-left: 0;
+        padding-top: 0; } }
 
 .container {
   display: flex;
@@ -34,21 +46,39 @@
   min-height: 100vh; }
 
 .wrapper {
-  max-width: 1024px; }
+  max-width: 1240px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr; }
 
 .container.about {
   background-color: #f4efe9;
-  background-image: url("../assets/svg/about_jesslev.svg");
-  background-size: 100% 100%; }
+  background-image: url("../assets/svg/about-jesslev.svg");
+  background-size: cover; }
 
 .container.work {
   background-color: #d1423c;
-  background-image: url("../assets/work_jesslev.png");
-  background-size: 100% 100%; }
+  background-image: url("../assets/svg/work-jesslev.svg");
+  background-size: cover; }
 
 .container.contact {
   background-color: #285ab7;
-  background-image: url("../assets/contact_jesslev.png");
-  background-size: 100% 100%; }
+  background-image: url("../assets/svg/contact-jesslev.svg");
+  background-size: cover; }
+
+.main-content {
+  max-width: 1024px; }
+  .main-content .content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 830px;
+    background-color: white;
+    border-radius: 2px;
+    min-height: 83vh;
+    margin-top: 4rem;
+    position: relative;
+    right: 1.5rem; }
 
 /*# sourceMappingURL=main.css.map */
