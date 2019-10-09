@@ -121,6 +121,12 @@
         height: 100%; }
     .main-content .content-container .text-content {
       width: 50%; }
+    .main-content .content-container .hidden {
+      display: none;
+      visibility: hidden; }
+    .main-content .content-container .visible {
+      visibility: visible;
+      display: inherit; }
 
 .svg-yellow-squiggle {
   position: absolute;
@@ -184,5 +190,23 @@
     #about-page .text-content {
       width: 80%;
       margin: 0 auto; } }
+
+#work-page {
+  background-color: #000000; }
+  #work-page .portfolio-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    margin-top: 1rem;
+    width: 40%;
+    height: 80%; }
+    #work-page .portfolio-content img {
+      padding: .5rem; }
+    #work-page .portfolio-content h2 {
+      color: #FFFFFF;
+      font-size: 32px;
+      margin: auto;
+      padding: 1rem; }
 
 /*# sourceMappingURL=main.css.map */

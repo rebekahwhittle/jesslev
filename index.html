@@ -1,68 +1,84 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title>Jess Lev</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link href="https://fonts.googleapis.com/css?family=Baloo|Baloo+Tamma|Baloo+Thambi|Montserrat|Open+Sans&display=swap" rel="stylesheet"/>
-		<link rel="stylesheet" type="text/css" media="screen" href="styles/main.css"/>
-		<script
-		src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-		crossorigin="anonymous"></script>
-	</head>
-	<body>
-		<div class="container about">
-			<div class="wrapper about">
-				<nav class="navigation-wrapper">
-					<div class="logo">
-						<a href="">jessica levtsenyuk</a>
-					</div>
-					<ul class="navigation">
-						<li id="about" class="nav-tab"><span>about</span></li>
-						<li id="work" class="nav-tab"><span href="">work</span></li>
-						<li id="contact" class="nav-tab"><span href="">contact</span></li>
-					</ul>
-				</nav>
-				<main class="main-content">
-					<div class="svg-yellow-squiggle">
-						<img src="./assets/svg/yellow-line-squiggle.svg" alt="">
-					</div>
-					<div class="svg-half-full-circle">
-						<img src="./assets/svg/half-full-circle.svg" alt="">
-					</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Jess Lev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo|Baloo+Tamma|Baloo+Thambi|Montserrat|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="styles/main.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container about">
+      <div class="wrapper about">
+        <nav class="navigation-wrapper">
+          <div class="logo"><a href="">jessica levtsenyuk</a></div>
+          <ul class="navigation">
+            <li id="about" class="nav-tab"><span>about</span></li>
+            <li id="work" class="nav-tab"><span href="">work</span></li>
+            <li id="contact" class="nav-tab"><span href="">contact</span></li>
+          </ul>
+        </nav>
+        <main class="main-content">
+          <div class="svg-yellow-squiggle">
+            <img src="./assets/svg/yellow-line-squiggle.svg" alt="" />
+          </div>
+          <div class="svg-half-full-circle">
+            <img src="./assets/svg/half-full-circle.svg" alt="" />
+          </div>
 
-					<div class="content-container">
-						<!-- ABOUT PAGE -->
-						<div id="about-page" class="about-page content">
-							<div class="image-content">
-								<img src="./assets/jesslev.png" alt="">
-							</div>
-							<div class="text-content">
-								<h2>making things in #ATX</h2>
-								<p>my name is jessica and i'm an illustrator who creates incredible work. you can find me making art on my ipad,
-									hiking the greenbelt or taking some new photos with my camera. oh, and i make music too! gander about this site as
-									you feel and i can't wait to show you what i've been working on!</p>
-							</div>
-						</div>
-						<!-- WORK PAGE -->
-						<!-- <div id="work-page" class="work-page content">
-							<div class="image-content">
-								<img src="./assets/jesslev.png" alt="">
-							</div>
-							<div class="text-content">
-								<h2>making things in #ATX</h2>
-								<p>my name is jessica and i'm an illustrator who creates incredible work. you can find me making art on my ipad,
-									hiking the greenbelt or taking some new photos with my camera. oh, and i make music too! gander about this site as
-									you feel and i can't wait to show you what i've been working on!</p>
-							</div>
-						</div> -->
-					</div>
-				</main>
-			</div>
-		</div>
-		<script src="main.js"></script>
-
-	</body>
+          <div class="content-container">
+            <!-- ABOUT PAGE -->
+            <div id="about-page" class="about-page content visible">
+              <div class="image-content">
+                <img src="./assets/jesslev.png" alt="" />
+              </div>
+              <div class="text-content">
+                <h2>making things in #ATX</h2>
+                <p>
+                  my name is jessica and i'm an illustrator who creates
+                  incredible work. you can find me making art on my ipad, hiking
+                  the greenbelt or taking some new photos with my camera. oh,
+                  and i make music too! gander about this site as you feel and i
+                  can't wait to show you what i've been working on!
+                </p>
+              </div>
+            </div>
+            <!-- WORK PAGE -->
+            <div id="work-page" class="work-page content hidden">
+				<div class="portfolio-content image-content">
+					<img src="./assets/jesslev.png" alt="" />
+					<h2>Call Girl</h2>
+				</div>
+				<div class="portfolio-content image-content">
+					<img src="./assets/jesslev.png" alt="" />
+					<h2>Call Girl</h2>
+				</div>
+            </div>
+            <!-- CONTACT PAGE -->
+            <div id="contact-page" class="contact-page content hidden">
+              <div class="image-content">
+                <img src="./assets/cheetah-wallpaper.png" alt="" />
+              </div>
+              <div class="text-content"></div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
