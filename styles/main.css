@@ -46,7 +46,8 @@
   min-height: 100vh; }
 
 .wrapper {
-  max-width: 1240px;
+  width: 70%;
+  min-height: 80vh;
   margin: auto;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -68,17 +69,19 @@
   background-size: cover; }
 
 .main-content {
-  max-width: 1024px; }
+  max-width: 1024px;
+  margin-top: 4rem;
+  position: relative;
+  right: 1.5rem; }
   .main-content .content-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 830px;
-    background-color: white;
-    border-radius: 2px;
-    min-height: 83vh;
-    margin-top: 4rem;
-    position: relative;
-    right: 1.5rem; }
+    width: 100%; }
+    .main-content .content-container .content {
+      width: 100%;
+      min-height: 83vh;
+      background-color: white;
+      border-radius: 2px; }
 
 /*# sourceMappingURL=main.css.map */

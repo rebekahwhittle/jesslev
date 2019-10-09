@@ -1,15 +1,19 @@
 .main-content {
     max-width: 1024px;
+    margin-top: 4rem;
+
+    position: relative;
+    right: 1.5rem;
 
     .content-container {
         @include flex-direction-justify (flex, row, space-between);
+        width: 100%;
 
-        width: 830px;
-        background-color: white;
-        border-radius: 2px;
-        min-height: 83vh;
-        margin-top: 4rem;
-        position: relative;
-        right: 1.5rem;
+        .content {
+            width: 100%;
+            min-height: 83vh;
+            background-color: white;
+            border-radius: 2px;
+        }
     }
 }
