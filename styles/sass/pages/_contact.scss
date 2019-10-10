@@ -1,62 +1,57 @@
-#about-page {
+#contact-page {
+    max-height: 90vh;
+    background-color: $tan-500-jl;
+
     @media screen and (width: 1024px), screen and (height: 1366) {
         flex-direction: column;
     }
 
-    @media screen and (max-width: 970px) {
+    @media screen and (max-height: 890px) {
         flex-direction: column;
     }
 
+    @media screen and (max-height: 420px) {
+        flex-direction: row;
+    }
+
     .image-content {
-        width: 60%;
-        max-height: 90vh;
-        @include padding (6rem, 2rem, 2rem, 2rem);
+        width: 100%;
         flex: 1;
 
         @media screen and (max-width: 1240px) {
-            width: 130%;
             margin: 0 auto;
-            padding: 2rem;
+            width: 70%;
         }
 
         @media screen and (width: 1024px), screen and (height: 1366) {
-            width: 80%;
-            @include padding (2rem, 2rem, 1rem, 2rem);
         }
         @media screen and (max-width: 970px) {
-            width: 80%;
-            @include padding (2rem, 2rem, 1rem, 2rem);
+            width: 100%;
         }
 
         @media screen and (max-width: 540px) {
-            width: 100%;
-            padding-bottom: 0;
         }
     }
 
     .text-content {
+        @include padding (10rem, 0, 0, null);
+        @include flex-direction-justify (flex, row, space-around);
         width: 40%;
-        @include padding (5.5rem, 2rem, 2rem, null);
         flex: 1;
-
-        h2 {
-            font-size: 48px;
-            font-family: 'Montserrat';
-            padding-bottom: 1rem;
-
-
-            @media screen and (max-width: 540px){
-                font-size: 32px;
-            }
-        }
 
         p {
             font: 24px;
             font-family: 'Montserrat';
+            font-style: bold;
             line-height: 24px;
+            color: $red-300-jl;
 
             @media screen and (max-width: 540px){
                 font-size: 18px;
+            }
+
+            @media screen and (max-width: 410px){
+                font-size: 14px;
             }
         }
 
@@ -68,7 +63,6 @@
 
         @media screen and (width: 1024px), screen and (height: 1366) {
             @include padding (1rem, 2rem, 2rem, 2rem);
-            margin-top: 4rem;
         }
 
         @media screen and (max-width: 970px) {
@@ -79,6 +73,10 @@
         @media screen and (max-width: 540px) {
             width: 100%;
             padding-top: .25rem;
+            margin-top: 4rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
     }
 }
+
