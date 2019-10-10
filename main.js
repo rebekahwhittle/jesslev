@@ -2,16 +2,25 @@
 $('#about').on('click', function(e){
     $('.container').attr('class', 'container');
     $('.container').addClass("about");
+
+    $('.navigation-wrapper').attr('class', 'navigation-wrapper');
+    $('.navigation-wrapper').addClass("about");
     pageVisible();
 });
 $('#work').on('click', function(e){
     $('.container').attr('class', 'container');
     $('.container').addClass("work");
+
+    $('.navigation-wrapper').attr('class', 'navigation-wrapper');
+    $('.navigation-wrapper').addClass("work");
     pageVisible();
 });
 $('#contact').on('click', function(e){
     $('.container').attr('class', 'container');
     $('.container').addClass("contact");
+
+    $('.navigation-wrapper').attr('class', 'navigation-wrapper');
+    $('.navigation-wrapper').addClass("contact");
     pageVisible();
 });
 

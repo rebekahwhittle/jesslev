@@ -23,10 +23,12 @@
         padding-top: 4rem;
         padding-left: 0;
         font-family: 'Baloo Thambi';
+        cursor: pointer;
 
         a {
             font-size: 32px;
             color: $red-300-jl;
+            cursor: pointer;
 
             @include a-tag ();
 
@@ -51,11 +53,13 @@
         .nav-tab {
             font-family: 'Baloo Thambi';
             color: $red-300-jl;
+            cursor: pointer;
 
             @include li-tag ();
 
             a {
                 @include a-tag ();
+                cursor: pointer;
 
                 @media screen and (max-width: 540px){
                     font-size: 14px;

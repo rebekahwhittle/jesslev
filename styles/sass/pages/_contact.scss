@@ -1,3 +1,16 @@
+.navigation-wrapper.contact{
+    .logo {
+        a {
+            color: $pink-300-jl;
+        }
+    }
+    .navigation {
+        .nav-tab {
+            color: $pink-300-jl;
+        }
+    }
+}
+
 #contact-page {
     max-height: 90vh;
     background-color: $tan-500-jl;
@@ -6,7 +19,7 @@
         flex-direction: column;
     }
 
-    @media screen and (max-height: 890px) {
+    @media screen and (min-height: 890px) {
         flex-direction: column;
     }
 
