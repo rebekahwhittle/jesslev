@@ -7,6 +7,11 @@
     @media screen and (max-width: 740px) {
         margin-top: 0;
     }
+    
+    .hidden {
+        display: none;
+        visibility: hidden;
+    }
 
     .content-container {
         @include flex-direction-justify (flex, row, space-between);

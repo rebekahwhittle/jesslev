@@ -101,6 +101,9 @@
   @media screen and (max-width: 740px) {
     .main-content {
       margin-top: 0; } }
+  .main-content .hidden {
+    display: none;
+    visibility: hidden; }
   .main-content .content-container {
     display: flex;
     flex-direction: row;
