@@ -6,12 +6,13 @@
     @media screen and (max-width: 970px) {
         flex-direction: column;
     }
+    display: flex;
 
     .image-content {
         width: 60%;
         max-height: 83vh;
-
         @include padding (6rem, 2rem, 2rem, 2rem);
+        flex: 1;
 
         @media screen and (max-width: 1240px) {
             width: 130%;
@@ -27,11 +28,17 @@
             width: 80%;
             @include padding (2rem, 2rem, 1rem, 2rem);
         }
+
+        @media screen and (max-width: 540px) {
+            width: 100%;
+            padding-bottom: 0;
+        }
     }
 
     .text-content {
         width: 40%;
         @include padding (5.5rem, 2rem, 2rem, null);
+        flex: 1;
 
         h2 {
             font-size: 48px;
@@ -64,9 +71,15 @@
             @include padding (1rem, 2rem, 2rem, 2rem);
             margin-top: 4rem;
         }
+
         @media screen and (max-width: 970px) {
             width: 80%;
             @include padding (2rem, 2rem, 1rem, 2rem);
+        }
+
+        @media screen and (max-width: 540px) {
+            width: 100%;
+            padding-top: .25rem;
         }
     }
 }
