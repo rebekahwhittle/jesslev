@@ -18,6 +18,10 @@
         top: -6%;
         right: 26%;
     }
+    @media screen and (max-width: 740px) {
+        display: none !important;
+        visibility: hidden !important;
+    }
 }
 
 .svg-half-full-circle {
@@ -45,9 +49,15 @@
         transform: rotate(40deg);
     }
 
-    // @media screen and (max-width: 1024px) {
-    //     width: 17%;
-    // }
+    @media screen and (max-width: 970px) {
+        top: 63%;
+        right: 0;
+    }
+
+    @media screen and (max-width: 740px) {
+        display: none !important;
+        visibility: hidden !important;
+    }
 
     // @media screen and (max-width: 770px) {
     //     top: 93%;

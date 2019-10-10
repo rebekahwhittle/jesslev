@@ -3,7 +3,6 @@
 
     min-height: 80vh;
     max-width: 230px;
-    overflow: scroll;
     z-index: 1;
     position: relative;
     left: 1.5rem;
@@ -30,6 +29,10 @@
             color: $red-300-jl;
 
             @include a-tag ();
+
+            @media screen and (max-width: 540px){
+                font-size: 24px;
+            }
         }
 
         @media screen and (max-width: 740px) {
@@ -53,6 +56,10 @@
 
             a {
                 @include a-tag ();
+
+                @media screen and (max-width: 540px){
+                    font-size: 14px;
+                }
             }
 
             @media screen and (max-width: 740px) {
@@ -63,6 +70,10 @@
         .nav-tab.active {
             a {
                 font-size: 24px;
+
+                @media screen and (max-width: 540px){
+                    font-size: 18px;
+                }
             }
         }
 
