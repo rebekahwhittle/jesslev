@@ -19,8 +19,8 @@ function pageVisible  () {
     if ($('.container').hasClass("about")) {
         $('#about-page').addClass("visible");
 
-        $('.svg-yellow-squiggle').removeClass("hidden");
-        $('.svg-half-full-circle').removeClass("hidden");
+        $('.svg-yellow-squiggle').addClass("visible");
+        $('.svg-half-full-circle').addClass("visible");
 
         $('#work-page').removeClass("visible").addClass("hidden");
         $('#contact-page').removeClass("visible").addClass("hidden");
@@ -28,8 +28,8 @@ function pageVisible  () {
     if ($('.container').hasClass("work")) {
         $('#work-page').addClass("visible");
 
-        $('.svg-yellow-squiggle').addClass("hidden");
-        $('.svg-half-full-circle').addClass("hidden");
+        $('.svg-yellow-squiggle').removeClass("visible");
+        $('.svg-half-full-circle').removeClass("visible");
 
         $('#about-page').removeClass("visible").addClass("hidden");
         $('#contact-page').removeClass("visible").addClass("hidden");
@@ -37,8 +37,8 @@ function pageVisible  () {
     if ($('.container').hasClass("contact")) {
         $('#contact-page').addClass("visible");
 
-        $('.svg-yellow-squiggle').removeClass("hidden");
-        $('.svg-half-full-circle').removeClass("hidden");
+        $('.svg-yellow-squiggle').removeClass("visible");
+        $('.svg-half-full-circle').removeClass("visible");
 
         $('#about-page').removeClass("visible").addClass("hidden");
         $('#work-page').removeClass("visible").addClass("hidden");

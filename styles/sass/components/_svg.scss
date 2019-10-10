@@ -6,6 +6,9 @@
     height: 59px;
     transform: rotate(10deg);
 
+    display: none;
+    visibility: hidden;
+
     img {
         width: 100%;
         height: 100%;
@@ -25,6 +28,9 @@
     height: 110px;
     transform: rotate(10deg);
 
+    display: none;
+    visibility: hidden;
+    
     img {
         position: absolute;
 

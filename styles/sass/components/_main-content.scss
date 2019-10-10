@@ -7,10 +7,10 @@
     @media screen and (max-width: 740px) {
         margin-top: 0;
     }
-    
-    .hidden {
-        display: none;
-        visibility: hidden;
+
+    .visible {
+        display: block;
+        visibility: visible;
     }
 
     .content-container {
