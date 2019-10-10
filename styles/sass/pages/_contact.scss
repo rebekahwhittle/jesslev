@@ -8,6 +8,15 @@
         .nav-tab {
             color: $pink-300-jl;
         }
+        .nav-tab.active {
+            a {
+                font-size: 24px;
+
+                @media screen and (max-width: 540px){
+                    font-size: 18px;
+                }
+            }
+        }
     }
 }
 

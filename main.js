@@ -5,6 +5,10 @@ $('#about').on('click', function(e){
 
     $('.navigation-wrapper').attr('class', 'navigation-wrapper');
     $('.navigation-wrapper').addClass("about");
+
+    $('.nav-tab').attr('class', 'nav-tab');
+    $('.nav-tab').addClass("active");
+    
     pageVisible();
 });
 $('#work').on('click', function(e){
@@ -13,6 +17,10 @@ $('#work').on('click', function(e){
 
     $('.navigation-wrapper').attr('class', 'navigation-wrapper');
     $('.navigation-wrapper').addClass("work");
+
+    $('.nav-tab').attr('class', 'nav-tab');
+    $('.nav-tab').addClass("active");
+
     pageVisible();
 });
 $('#contact').on('click', function(e){
@@ -21,6 +29,10 @@ $('#contact').on('click', function(e){
 
     $('.navigation-wrapper').attr('class', 'navigation-wrapper');
     $('.navigation-wrapper').addClass("contact");
+
+    $('.nav-tab').attr('class', 'nav-tab');
+    $('.nav-tab').addClass("active");
+
     pageVisible();
 });
 

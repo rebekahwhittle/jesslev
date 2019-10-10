@@ -301,6 +301,11 @@
   color: #dfa5a5; }
 .navigation-wrapper.contact .navigation .nav-tab {
   color: #dfa5a5; }
+.navigation-wrapper.contact .navigation .nav-tab.active a {
+  font-size: 24px; }
+  @media screen and (max-width: 540px) {
+    .navigation-wrapper.contact .navigation .nav-tab.active a {
+      font-size: 18px; } }
 
 #contact-page {
   max-height: 90vh;
