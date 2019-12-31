@@ -47,9 +47,10 @@ function pageVisible  () {
         $('#contact-page').removeClass("visible").addClass("hidden");
     }
     if ($('.container').hasClass("work")) {
+        console.log("hey");
         $('#work-page').addClass("visible");
 
-        $('.svg-yellow-squiggle').removeClass("visible");
+        $('.svg-yellow-squiggle').addClass("hello");
         $('.svg-half-full-circle').removeClass("visible");
 
         $('#about-page').removeClass("visible").addClass("hidden");

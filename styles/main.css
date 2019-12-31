@@ -106,11 +106,6 @@
   background-image: url("../assets/svg/about-jesslev.svg");
   background-size: cover; }
 
-.container.work {
-  background-color: #d1423c;
-  background-image: url("../assets/svg/work-jesslev.svg");
-  background-size: cover; }
-
 .container.contact {
   background-color: #285ab7;
   background-image: url("../assets/svg/contact-jesslev.svg");
@@ -140,7 +135,7 @@
       background-color: white;
       border-radius: 2px; }
     .main-content .content-container .image-content {
-      width: 50%; }
+      width: 40%; }
       .main-content .content-container .image-content img {
         width: 100%;
         height: 100%; }
@@ -283,12 +278,11 @@
       padding-top: .25rem; } }
 
 .navigation-wrapper.work .logo a {
-  color: #f4efe9; }
+  color: #d1423c; }
 .navigation-wrapper.work .navigation .nav-tab {
-  color: #f4efe9; }
+  color: #d1423c; }
 
 #work-page {
-  background-color: #000000;
   flex-direction: column; }
   #work-page .portfolio-row {
     display: flex;

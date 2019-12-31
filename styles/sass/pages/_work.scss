@@ -1,19 +1,18 @@
 .navigation-wrapper.work {
     .logo {
         a {
-            color: $tan-300-jl;
+            color: $red-300-jl;
         }
     }
 
     .navigation {
         .nav-tab {
-            color: $tan-300-jl;
+            color: $red-300-jl;
         }
     }
 }
 
 #work-page {
-    background-color: $black;
     flex-direction: column;
 
     .portfolio-row {
