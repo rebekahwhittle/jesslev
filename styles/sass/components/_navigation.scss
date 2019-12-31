@@ -27,7 +27,7 @@
 
         a {
             font-size: 32px;
-            color: $red-300-jl;
+            color: $blue-300-jl;
             cursor: pointer;
 
             @include a-tag ();
@@ -52,7 +52,7 @@
 
         .nav-tab {
             font-family: 'Baloo Thambi';
-            color: $red-300-jl;
+            color: $blue-300-jl;
             cursor: pointer;
 
             @include li-tag ();

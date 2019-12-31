@@ -29,7 +29,7 @@
     cursor: pointer; }
     .navigation-wrapper .logo a {
       font-size: 32px;
-      color: #d1423c;
+      color: #285ab7;
       cursor: pointer;
       text-decoration: none; }
       @media screen and (max-width: 540px) {
@@ -47,7 +47,7 @@
     list-style: none; }
     .navigation-wrapper .navigation .nav-tab {
       font-family: 'Baloo Thambi';
-      color: #d1423c;
+      color: #285ab7;
       cursor: pointer;
       display: block; }
       .navigation-wrapper .navigation .nav-tab a {
