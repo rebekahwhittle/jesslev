@@ -6,11 +6,10 @@
     @media screen and (max-width: 970px) {
         flex-direction: column;
     }
-    display: flex;
 
     .image-content {
         width: 60%;
-        max-height: 83vh;
+        max-height: 90vh;
         @include padding (6rem, 2rem, 2rem, 2rem);
         flex: 1;
 

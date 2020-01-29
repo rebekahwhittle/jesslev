@@ -1,0 +1,117 @@
+.navigation-wrapper.contact{
+    .logo {
+        a {
+            color: $pink-300-jl;
+        }
+    }
+    .navigation {
+        .nav-tab {
+            color: $pink-300-jl;
+        }
+        .nav-tab.active {
+            a {
+                font-size: 24px;
+
+                @media screen and (max-width: 540px){
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+#contact-page {
+    max-height: 90vh;
+    background-color: $tan-500-jl;
+    // flex-direction: column; 
+
+    @media screen and (max-width: 770px) {
+        flex-direction: column;
+    }
+
+    @media screen and (width: 1024px), screen and (height: 1366) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-height: 860px) {
+        // flex-direction: column;
+    }
+
+    @media screen and (max-height: 420px) {
+        flex-direction: row;
+    }
+
+    .image-content {
+        width: 100%;
+        flex: 1;
+
+        @media screen and (max-width: 1240px) {
+            margin: 0 auto;
+            width: 70%;
+        }
+
+        @media screen and (width: 1366px), screen and (height: 1024px) {
+            margin: 0 auto;
+            width: 70%;
+        }
+
+        @media screen and (max-width: 970px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 540px) {
+        }
+    }
+
+    .text-content {
+        @include padding (10rem, 0, 0, null);
+        @include flex-direction-justify (flex, row, space-around);
+        width: 40%;
+        flex: 1;
+
+        p {
+            font: 24px;
+            font-family: 'Montserrat';
+            font-style: bold;
+            line-height: 24px;
+            color: $red-300-jl;
+
+            @media screen and (max-width: 540px){
+                font-size: 18px;
+            }
+
+            @media screen and (max-width: 410px){
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 1240px) {
+            width: 80%;
+            margin: 0 auto;
+            // padding: 2rem;
+        }
+
+        @media screen and (width: 1366px), screen and (height: 1024px) {
+            margin: 0 auto;
+            padding-top: 2rem;
+        }
+
+        @media screen and (width: 1024px), screen and (height: 1366) {
+            @include padding (1rem, 2rem, 2rem, 2rem);
+        }
+
+        @media screen and (max-width: 970px) {
+            width: 80%;
+            @include padding (2rem, 2rem, 1rem, 2rem);
+        }
+
+        @media screen and (max-width: 540px) {
+            width: 100%;
+            padding-top: .25rem;
+            margin-top: 4rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}
+

@@ -27,7 +27,7 @@
         }
 
         .image-content {
-            width: 50%;
+            width: 40%;
 
             img {
                 width: 100%;
@@ -46,7 +46,7 @@
 
         .visible {
             visibility: visible;
-            display: inherit;
+            display: flex;
         }
     }
 }
