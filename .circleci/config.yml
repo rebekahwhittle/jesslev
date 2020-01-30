@@ -16,4 +16,8 @@ jobs:
           paths: 
             - ~/.cache/yarn
 
+      - restore_cache: 
+          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+
+
 
