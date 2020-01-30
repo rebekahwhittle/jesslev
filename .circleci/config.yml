@@ -16,14 +16,14 @@ jobs:
           paths: 
             - ~/.cache/yarn
       
-      - run: 
-          name: jest tests
-          command: |
-            mkdir -p test-results/jest
-            yarn run test
-          environment: 
-            JEST_JUNIT_OUTPUT: test-results/jest/junit.xml
+      # - run: 
+      #     name: jest tests
+      #     command: |
+      #       mkdir -p test-results/jest
+      #       yarn run test
+      #     environment: 
+      #       JEST_JUNIT_OUTPUT: test-results/jest/junit.xml
 
-      - store_test_results: 
-          path: test-results
+      # - store_test_results: 
+      #     path: test-results
 
