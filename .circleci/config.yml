@@ -35,6 +35,12 @@ jobs:
           paths:
             - ".git"
 
+      - restore_cache:
+          keys:
+            - source-v1-{{ .Branch }}-{{ .Revision }}
+            - source-v1-{{ .Branch }}-
+            - source-v1-
+
   hello-world: 
     docker: 
       - image: circleci/node:8
