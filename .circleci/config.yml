@@ -21,7 +21,7 @@ jobs:
 
       - restore_cache: 
           key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
-  test: 
+  hello-world: 
     docker: 
       - image: circleci/node:8
     steps: 
@@ -30,9 +30,9 @@ jobs:
 
 workflows: 
   version: 2.1
-  build_and_test: 
+  build_and_hello-world: 
     jobs: 
       - build
-      - test
+      - hello-world
 
 
