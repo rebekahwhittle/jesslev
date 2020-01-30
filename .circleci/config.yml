@@ -8,10 +8,16 @@ jobs:
 
       - run: yarn install
 
-      - save_cache: 
-          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch}}
-          paths: 
+      - restore_cache:
+          keys:
+            - yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - yarn-packages-v1-{{ .Branch }}-
+            - yarn-packages-v1-
+
+      - save_cache:
+          paths:
             - ~/.cache/yarn
+          key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
 
       - restore_cache: 
           key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
