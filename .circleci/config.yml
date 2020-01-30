@@ -1,7 +1,52 @@
-version: 2.1
-orbs:
-  welcome: circleci/welcome-orb@0.4.1
-workflows:
-  welcome:
-    jobs:
-      - welcome/run
+docker: 
+  - image: customimage/ruby:2.3-node-phantomjs-0.0.1
+    environment:
+      RAILS_ENV: test
+      RACK_ENV: test
+  - image: circleci/mysql:5.6
+
+steps: 
+  - checkout
+  - run: cp config/{database_circleci,database}.yml
+
+  - restore_cache: 
+      keys: 
+        - gem-cache-v1-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+        - gem-cache-v1-{{ arch }}-{{ .Branch }}
+        - gem-cache-v1
+
+  - run: bundle install --path vendor/bundle
+
+  - save_cache: 
+      key: gem-cache-v1-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+      paths: 
+        - vendor/bundle
+  
+  - run: bundel exec rubocop
+  - run: bundle exec rake db:create db:schema:load --true
+  - run: bundle exec rake factory_girl:lint
+
+  - restore_cache: 
+      keys: 
+        - asset-cache-v1-{{ arch }}-{{ .Branch }}-{{ .Environment.CIRCLE_SHA!1 }}
+        - asset-cache-v1-{{ arch }}-{{ .Branch }}
+        - asset-cache-v1
+
+  - run: bundle exec rake assets:precompile 
+
+  - save_cache: 
+    key: asset-cache-v1-{{ arch }}-{{ .Branch }}-{{ .Environment.CIRCLE_SHA1 }}
+    paths: 
+      - public/assets
+      - tmp/cache/assets/sprockets
+
+  - run: bundel exec rspec
+  - run: bundle exec cucumber
+
+# version: 2.1
+# orbs:
+#   welcome: circleci/welcome-orb@0.4.1
+# workflows:
+#   welcome:
+#     jobs:
+#       - welcome/run
