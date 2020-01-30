@@ -22,7 +22,7 @@ jobs:
       - checkout 
       - run: echo "hello world"
 
-worflows: 
+workflows: 
   version: 2.1
   build_and_test: 
     jobs: 
