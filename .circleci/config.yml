@@ -10,6 +10,8 @@ jobs:
     executor: my-executor
     steps: 
       - checkout 
+      
+      - setup_remote_docker
 
       - run: mkdir -p workspace
       - run: echo "Hello, world!" > workspace/echo-output
@@ -26,7 +28,7 @@ jobs:
           at: workspace
 
       - run: |
-          if [[ `cat /workspace/echo-output` == "Hello, world!" ]]; then
+          if [[ `cat workspace/echo-output` == "Hello, world!" ]]; then
             echo "It worked!";
           else
             echo "Nope!"; exit 1
