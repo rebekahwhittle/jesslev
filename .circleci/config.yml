@@ -1,58 +1,43 @@
 version: 2.1
-jobs: 
-  build:
+
+executors: 
+  my-executor: 
     docker:
       - image: circleci/node:8
+
+jobs: 
+  flow:
+    executor: my-executor
     steps: 
       - checkout 
 
-      - run: yarn install
+      - run: mkdir -p workspace
+      - run: echo "Hello, world!" > workspace/echo-output
 
-      - restore_cache:
-          keys:
-            - yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
-            - yarn-packages-v1-{{ .Branch }}-
-            - yarn-packages-v1-
-
-      - save_cache:
+      - persist_to_workspace:
+          root: workspace
           paths:
-            - ~/.cache/yarn
-          key: yarn-packages-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - echo-output
 
-      - restore_cache: 
-          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+  downstream: 
+    executor: my-executor
+    steps:
+      - attach_workspace:
+          at: /workspace
 
-      - restore_cache:
-          keys:
-            - source-v1-{{ .Branch }}-{{ .Revision }}
-            - source-v1-{{ .Branch }}-
-            - source-v1-
-
-      - checkout
-
-      - save_cache:
-          key: source-v1-{{ .Branch }}-{{ .Revision }}
-          paths:
-            - ".git"
-
-      - restore_cache:
-          keys:
-            - source-v1-{{ .Branch }}-{{ .Revision }}
-            - source-v1-{{ .Branch }}-
-            - source-v1-
-
-  hello-world: 
-    docker: 
-      - image: circleci/node:8
-    steps: 
-      - checkout 
-      - run: echo "hello world"
+      - run: |
+          if [[ `cat /workspace/echo-output` == "Hello, world!" ]]; then
+            echo "It worked!";
+          else
+            echo "Nope!"; exit 1
+          fi
 
 workflows: 
   version: 2.1
-  build_and_hello-world: 
-    jobs: 
-      - build
-      - hello-world
 
-#
+  btd: 
+    jobs: 
+      - flow
+      - downstream:
+          requires:
+            - flow
