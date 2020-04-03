@@ -1,32 +1,45 @@
 version: 2.1
-jobs: 
-  build:
+
+executors: 
+  my-executor: 
     docker:
       - image: circleci/node:8
+
+jobs: 
+  flow:
+    executor: my-executor
     steps: 
       - checkout 
+      
+      - setup_remote_docker
 
-      - run: yarn install
+      - run: mkdir -p workspace
+      - run: echo "Hello, world!" > workspace/echo-output
 
-      - save_cache: 
-          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch}}
-          paths: 
-            - ~/.cache/yarn
+      - persist_to_workspace:
+          root: workspace
+          paths:
+            - echo-output
 
-      - restore_cache: 
-          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
-  test: 
-    docker: 
-      - image: circleci/node:8
-    steps: 
-      - checkout 
-      - run: echo "hello world"
+  downstream: 
+    executor: my-executor
+    steps:
+      - attach_workspace:
+          at: workspace
+
+      - run: |
+          if [[ `cat workspace/echo-output` == "Hello, world!" ]]; then
+            echo "It worked!";
+          else
+            echo "Nope!"; exit 1
+          fi
 
 workflows: 
   version: 2.1
-  build_and_test: 
+
+  btd: 
     jobs: 
-      - build
-      - test
-
-
+      - flow
+      - downstream:
+          requires:
+            - flow
