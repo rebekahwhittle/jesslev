@@ -3,9 +3,11 @@
     margin-top: 4rem;
 
     position: relative;
+    left: 8rem;
 
     @media screen and (max-width: 740px) {
         margin-top: 0;
+        left: 0;
     }
 
     .visible {
