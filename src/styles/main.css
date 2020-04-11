@@ -261,6 +261,9 @@
   }
 }
 
+#about-page {
+  min-height: 0;
+}
 @media screen and (width: 1024px), screen and (height: 1366) {
   #about-page {
     flex-direction: column;
