@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/main.css';
-import App from './App';
+import Work from './work';
 import Nav from './nav';
 
 import * as serviceWorker from './serviceWorker';
@@ -10,7 +10,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Nav />
 
-    <App />
+    <Work />
   </React.StrictMode>,
   document.getElementById('root')
 );
