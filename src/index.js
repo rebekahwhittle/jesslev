@@ -4,6 +4,8 @@ import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import './styles/main.css';
 import Work from './work';
 import Nav from './nav';
+import About from './about';
+import Contact from './contact';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -14,9 +16,11 @@ ReactDOM.render(
         <div class="container work">
           <div class="wrapper work">
               <Nav />
-              <Switch>
-                <Route exactly component={Work} pattern="/" />
-              </Switch>
+
+              <Route  component={Work} exact path="/" />
+              <Route  component={About} exact path="/about" />
+              <Route  component={Contact} exact path="/contact" />
+
           </div>
         </div>
       </Router>
