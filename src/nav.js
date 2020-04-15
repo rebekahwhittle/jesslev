@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import './styles/main.css';
 
 function Nav() {
@@ -7,9 +7,9 @@ function Nav() {
     <nav className="navigation-wrapper work">
       <div className="logo"><a href="">jessica levtsenyuk</a></div>
       <ul className="navigation">
-          <li id="work" className="nav-tab active"><a>work</a></li>
-          <li id="about" className="nav-tab active"><a>about</a></li>
-          <li id="contact" className="nav-tab active"><a>contact</a></li>
+          <Link id="work" className="nav-tab active" to="/">work</Link>
+          <Link id="about" className="nav-tab active" to="/about">about</Link>
+          <Link id="contact" className="nav-tab active" to="/contact">contact</Link>
       </ul>
     </nav>
   );

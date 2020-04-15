@@ -32,6 +32,7 @@ function Work() {
           </div>
           {/* <!-- WORK PAGE --> */}
           <div id="work-page" className="work-page content visible">
+            WORK PAGE
             <div className="portfolio-row">
               <div className="portfolio-content image-content">
                 <img src="./assets/portfolio/autumn-girl.png" alt="" />
