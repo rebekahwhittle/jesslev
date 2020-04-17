@@ -1,21 +1,24 @@
 import React from 'react';
 import './styles/main.css';
+import cheetah from './assets/cheetah-wallpaper.png';
+import hlfcir from './assets/svg/half-full-circle.svg';
+import ylsquig from './assets/svg/yellow-line-squiggle.svg';
 
 function Contact() {
   return (
 
       <main className="main-content">
         <div className="svg-yellow-squiggle">
-          <img src="./assets/svg/yellow-line-squiggle.svg" alt="" />
+          <img src={ylsquig} alt="" />
         </div>
         <div className="svg-half-full-circle">
-          <img src="./assets/svg/half-full-circle.svg" alt="" />
+          <img src={hlfcir} alt="" />
         </div>
 
         <div className="content-container">
             <div id="contact-page" className="contact-page content">
                 <div className="image-content">
-                    <img src="./assets/cheetah-wallpaper.png" alt="" />
+                    <img src={cheetah} alt="" />
                 </div>
                 <div className="text-content">
                     <div className="contact-label">
