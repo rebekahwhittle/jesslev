@@ -1,5 +1,7 @@
 import React from 'react';
 import './styles/main.css';
+import jesslev from './assets/jesslev.png';
+
 
 function About() {
   return (
@@ -15,7 +17,7 @@ function About() {
         <div className="content-container">
           <div id="about-page" className="about-page content">
             <div className="image-content">
-              <img src="./assets/jesslev.png" alt="" />
+              <img src={jesslev} alt="" />
             </div>
             <div className="text-content">
               <h2>A little about me...</h2>
@@ -29,7 +31,6 @@ function About() {
           </div>
         </div>
       </main>
-
   );
 }
 

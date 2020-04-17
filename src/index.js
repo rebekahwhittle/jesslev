@@ -13,8 +13,8 @@ ReactDOM.render(
   <React.StrictMode>
 
      <Router>
-        <div class="container work">
-          <div class="wrapper work">
+        <div class="container contact">
+          <div class="wrapper contact">
               <Nav />
 
               <Route  component={Work} exact path="/" />
