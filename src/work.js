@@ -15,7 +15,6 @@ function Work() {
           </div>
 
           <div className="content-container">
-            {/* <!-- WORK PAGE --> */}
             <div id="work-page" className="work-page content visible">
               <div className="portfolio-row">
                 <div className="portfolio-content image-content">
