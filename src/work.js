@@ -2,7 +2,6 @@ import React from "react";
 // import logo from './logo.svg';
 import "./styles/main.css";
 import { Link, Route, BrowserRouter as Router } from "react-router-dom";
-import Digital from "./digital";
 
 function Work() {
   return (
@@ -12,13 +11,8 @@ function Work() {
 
           <div className="content-container">
             <div id="work-page" className="work-page content visible">
-              <Router>
-                <Link id="digital" className="nav-tab active" to="/digital">Digital</Link>
-                <Link id="paintings" className="nav-tab active" to="/paintings">Paintings</Link>
-
-                <Route component={Digital} exact path="/digital" />
-
-              </Router>
+              HELLO WORLD
+              <Link id="digital" className="nav-tab active" to="/work/digital">Digital</Link>
             </div>
           </div>
         </main>

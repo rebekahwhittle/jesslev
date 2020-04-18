@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 import "./styles/main.css";
-import Work from "./work";
+import WorkNav from "./work_nav";
 import Nav from "./nav";
 import About from "./about";
 import Contact from "./contact";
@@ -14,7 +14,7 @@ ReactDOM.render(
     <Router>
       <Nav />
 
-      <Route component={Work} exact path="/" />
+      <Route component={WorkNav} exact path="/work" />
       <Route component={About} exact path="/about" />
       <Route component={Contact} exact path="/contact" />
     </Router>
