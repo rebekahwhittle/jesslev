@@ -4,6 +4,8 @@ import "./styles/main.css";
 import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 
 function Work() {
+  console.log("HERE GIRLIE SQUIRRLEY");
+
   return (
     <div className="container work">
       <div className="wrapper work">
@@ -18,7 +20,6 @@ function Work() {
         </main>
       </div>
     </div>
-
   );
 }
 
