@@ -38,7 +38,7 @@
 }
 .navigation-wrapper .logo a {
   font-size: 32px;
-  color: #285ab7;
+  color: #d1423c;
   cursor: pointer;
   text-decoration: none;
 }
@@ -62,8 +62,10 @@
 }
 .navigation-wrapper .navigation .nav-tab {
   font-family: "Baloo Thambi";
-  color: #285ab7;
+  color: #d1423c;
   cursor: pointer;
+  text-decoration: none;
+  font-size: 24px;
   display: block;
 }
 .navigation-wrapper .navigation .nav-tab a {
@@ -79,6 +81,10 @@
   .navigation-wrapper .navigation .nav-tab {
     display: inline-block;
   }
+}
+.navigation-wrapper .navigation .nav-tab:hover {
+  color: #a3322e;
+  transition: ease-in-out 0.5s;
 }
 .navigation-wrapper .navigation .nav-tab.active a {
   font-size: 24px;
@@ -371,13 +377,6 @@
     width: 100%;
     padding-top: 0.25rem;
   }
-}
-
-.navigation-wrapper.work .logo a {
-  color: #d1423c;
-}
-.navigation-wrapper.work .navigation .nav-tab {
-  color: #d1423c;
 }
 
 #work-page {

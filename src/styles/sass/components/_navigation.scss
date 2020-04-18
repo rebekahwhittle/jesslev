@@ -9,7 +9,7 @@
     top: 0;
     bottom: 0;
     left: 18rem;
-    
+
     @media screen and (max-width: 1024px) {
         min-height: 80vh;
     }
@@ -30,7 +30,7 @@
 
         a {
             font-size: 32px;
-            color: $blue-300-jl;
+            color: $red-300-jl;
             cursor: pointer;
 
             @include a-tag ();
@@ -55,14 +55,17 @@
 
         .nav-tab {
             font-family: 'Baloo Thambi';
-            color: $blue-300-jl;
+            color: $red-300-jl;
             cursor: pointer;
+            text-decoration: none;
+            font-size: 24px;
 
             @include li-tag ();
 
             a {
                 @include a-tag ();
                 cursor: pointer;
+
 
                 @media screen and (max-width: 540px){
                     font-size: 14px;
@@ -71,6 +74,11 @@
 
             @media screen and (max-width: 740px) {
                 display: inline-block;
+            }
+
+            &:hover  {
+                color: #a3322e;
+                transition: ease-in-out .5s;
             }
         }
 
