@@ -27,8 +27,8 @@ function Contact() {
                   <p>Instagram</p>
                 </div>
                 <div class="contact-info">
-                  <p>jessicalev@gmail.com</p>
-                  <p>402-567-8901</p>
+                  <p>jessicadlev@gmail.com</p>
+                  <p>‭(402) 802-2465‬</p>
                   <p>@mechanicalbully</p>
                 </div>
               </div>

@@ -157,7 +157,7 @@
 
 .main-content {
   max-width: 1024px;
-  margin-top: 4rem;
+  margin-top: 10rem;
   position: relative;
   left: 8rem;
 }
@@ -407,7 +407,7 @@
 }
 
 #contact-page {
-  max-height: 90vh;
+  min-height: 0;
   background-color: #fbedc8;
 }
 @media screen and (max-width: 770px) {
