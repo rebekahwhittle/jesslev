@@ -6,7 +6,6 @@ import Work from "./work";
 import Nav from "./nav";
 import About from "./about";
 import Contact from "./contact";
-import Digital from "./digital";
 
 import * as serviceWorker from "./serviceWorker";
 
@@ -18,7 +17,6 @@ ReactDOM.render(
       <Route component={Work} exact path="/" />
       <Route component={About} exact path="/about" />
       <Route component={Contact} exact path="/contact" />
-      <Route component={Digital} exact path="/digital" />
     </Router>
   </React.StrictMode>,
   document.getElementById("root")
