@@ -38,6 +38,11 @@
             @media screen and (max-width: 540px){
                 font-size: 24px;
             }
+
+            &:hover  {
+                color: #a3322e;
+                transition: ease-in-out .5s;
+            }
         }
 
         @media screen and (max-width: 740px) {
@@ -45,6 +50,7 @@
             padding-top: 1.5rem;
             padding-bottom: 1.5rem;
         }
+
     }
 
     .navigation {

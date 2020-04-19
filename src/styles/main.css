@@ -47,6 +47,10 @@
     font-size: 24px;
   }
 }
+.navigation-wrapper .logo a:hover {
+  color: #a3322e;
+  transition: ease-in-out 0.5s;
+}
 @media screen and (max-width: 740px) {
   .navigation-wrapper .logo {
     flex: 1;
