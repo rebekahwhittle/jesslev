@@ -6,6 +6,7 @@ import Digital from "./digital";
 import Work from "./work";
 import Paintings from "./paintings";
 import Animations from "./animations";
+import Ripe from "./ripe";
 
 function WorkNav() {
   return (
@@ -19,6 +20,7 @@ function WorkNav() {
                         <Route exact path='/work/digital' component={Digital}/>
                         <Route exact path='/work/paintings' component={Paintings}/>
                         <Route exact path='/work/animations' component={Animations}/>
+                        <Route exact path='/work/ripe' component={Ripe}/>
                         <Route path='/' component={Work}/>
                     </Switch>
                 </Router>

@@ -17,6 +17,7 @@ function Work() {
               <Link id="digital" className="nav-tab active" to="/work/digital">Digital</Link>
               <Link id="digital" className="nav-tab active" to="/work/paintings">Paintings</Link>
               <Link id="digital" className="nav-tab active" to="/work/animations">Animations</Link>
+              <Link id="digital" className="nav-tab active" to="/work/ripe">Ripe</Link>
             </div>
           </div>
         </main>
