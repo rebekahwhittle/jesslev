@@ -10,6 +10,7 @@ import Ripe from "./ripe";
 
 function WorkNav() {
   return (
+    
     <div className="container work">
       <div className="wrapper work">
         <main className="main-content">

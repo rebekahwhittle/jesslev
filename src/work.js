@@ -7,22 +7,32 @@ function Work() {
   console.log("HERE GIRLIE SQUIRRLEY");
 
   return (
-    <div className="container work">
-      <div className="wrapper work">
-        <main className="main-content">
-
-          <div className="content-container">
-            <div id="work-page" className="work-page content visible">
-              HELLO WORLD
-              <Link id="digital" className="nav-tab active" to="/work/digital">Digital</Link>
-              <Link id="digital" className="nav-tab active" to="/work/paintings">Paintings</Link>
-              <Link id="digital" className="nav-tab active" to="/work/animations">Animations</Link>
-              <Link id="digital" className="nav-tab active" to="/work/ripe">Ripe</Link>
-            </div>
-          </div>
-        </main>
+    <div>
+      <div className="portfolio-row">
+        <div className="portfolio-content image-content">
+          <Link id="digital" className="nav-tab-image" to="/work/digital">
+            <img className="digital" src={process.env.PUBLIC_URL + "/worknav/1.png"} />
+          </Link>
+        </div>
+        <div className="portfolio-content image-content">
+         <Link id="digital" className="nav-tab-image" to="/work/paintings">
+          <img className="paintings" src={process.env.PUBLIC_URL + "/worknav/2.png"} />
+         </Link>
+        </div>
       </div>
-    </div>
+      <div className="portfolio-row">
+        <div className="portfolio-content image-content">
+          <Link id="digital" className="nav-tab-image" to="/work/animations">
+            <img className="animations" src={process.env.PUBLIC_URL + "/worknav/3.png"} />
+          </Link>
+        </div>
+        <div className="portfolio-content image-content">
+          <Link id="digital" className="nav-tab-image" to="/work/ripe">
+            <img className="ripe" src={process.env.PUBLIC_URL + "/worknav/4.png"} />
+          </Link>
+        </div>
+      </div>
+  </div>
   );
 }
 
