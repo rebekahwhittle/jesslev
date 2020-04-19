@@ -19,7 +19,7 @@ function WorkNav() {
                         <Route exact path='/work/digital' component={Digital}/>
                         <Route exact path='/work/paintings' component={Paintings}/>
                         <Route exact path='/work/animations' component={Animations}/>
-                        <Route path='/work' component={Work}/>
+                        <Route path='/' component={Work}/>
                     </Switch>
                 </Router>
             </div>

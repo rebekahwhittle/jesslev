@@ -14,7 +14,7 @@ ReactDOM.render(
     <Router>
       <Nav />
       <Switch>
-        <Route component={WorkNav} exact path="/work" />
+        <Route component={WorkNav} exact path="/" />
         <Route component={About} exact path="/about" />
         <Route component={Contact} exact path="/contact" />
       </Switch>
