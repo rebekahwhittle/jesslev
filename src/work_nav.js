@@ -4,6 +4,8 @@ import "./styles/main.css";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import Digital from "./digital";
 import Work from "./work";
+import Paintings from "./paintings";
+import Animations from "./animations";
 
 function WorkNav() {
   return (
@@ -15,6 +17,8 @@ function WorkNav() {
                 <Router>
                     <Switch>
                         <Route exact path='/work/digital' component={Digital}/>
+                        <Route exact path='/work/paintings' component={Paintings}/>
+                        <Route exact path='/work/animations' component={Animations}/>
                         <Route path='/work' component={Work}/>
                     </Switch>
                 </Router>

@@ -15,6 +15,8 @@ function Work() {
             <div id="work-page" className="work-page content visible">
               HELLO WORLD
               <Link id="digital" className="nav-tab active" to="/work/digital">Digital</Link>
+              <Link id="digital" className="nav-tab active" to="/work/paintings">Paintings</Link>
+              <Link id="digital" className="nav-tab active" to="/work/animations">Animations</Link>
             </div>
           </div>
         </main>
