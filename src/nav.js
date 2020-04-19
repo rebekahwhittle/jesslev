@@ -7,6 +7,7 @@ function Nav() {
     <nav className="navigation-wrapper work">
       <div className="logo"><a href="/work">jessica levtsenyuk</a></div>
       <ul className="navigation">
+          <div id ="work" className="nav-tab active"><a href="/work">work</a></div>
           <Link id="work" className="nav-tab active" to="/work">work</Link>
           <Link id="about" className="nav-tab active" to="/about">about</Link>
           <Link id="contact" className="nav-tab active" to="/contact">contact</Link>

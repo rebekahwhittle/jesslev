@@ -13,8 +13,10 @@ function WorkNav() {
           <div className="content-container">
             <div id="work-page" className="work-page content visible">
                 <Router>
-                    <Route exact path='/work' component={Work}/>
-                    <Route path='/work/digital' component={Digital}/>
+                    <Switch>
+                        <Route exact path='/work/digital' component={Digital}/>
+                        <Route path='/work' component={Work}/>
+                    </Switch>
                 </Router>
             </div>
           </div>
