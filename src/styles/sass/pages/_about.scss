@@ -12,7 +12,7 @@
     .image-content {
         width: 60%;
         max-height: 90vh;
-        @include padding (6rem, 2rem, 2rem, 2rem);
+        @include padding(6rem, 2rem, 2rem, 2rem);
         flex: 1;
 
         @media screen and (max-width: 1240px) {
@@ -23,11 +23,11 @@
 
         @media screen and (width: 1024px), screen and (height: 1366) {
             width: 80%;
-            @include padding (2rem, 2rem, 1rem, 2rem);
+            @include padding(2rem, 2rem, 1rem, 2rem);
         }
         @media screen and (max-width: 970px) {
             width: 80%;
-            @include padding (2rem, 2rem, 1rem, 2rem);
+            @include padding(2rem, 2rem, 1rem, 2rem);
         }
 
         @media screen and (max-width: 540px) {
@@ -38,26 +38,25 @@
 
     .text-content {
         width: 40%;
-        @include padding (5.5rem, 2rem, 2rem, null);
+        @include padding(5.5rem, 2rem, 2rem, null);
         flex: 1;
 
         h2 {
             font-size: 48px;
-            font-family: 'Montserrat';
+            font-family: "Montserrat";
             padding-bottom: 1rem;
 
-
-            @media screen and (max-width: 540px){
+            @media screen and (max-width: 540px) {
                 font-size: 32px;
             }
         }
 
         p {
             font: 24px;
-            font-family: 'Montserrat';
+            font-family: "Montserrat";
             line-height: 24px;
 
-            @media screen and (max-width: 540px){
+            @media screen and (max-width: 540px) {
                 font-size: 18px;
             }
         }
@@ -69,18 +68,18 @@
         }
 
         @media screen and (width: 1024px), screen and (height: 1366) {
-            @include padding (1rem, 2rem, 2rem, 2rem);
+            @include padding(1rem, 2rem, 2rem, 2rem);
             margin-top: 4rem;
         }
 
         @media screen and (max-width: 970px) {
             width: 80%;
-            @include padding (2rem, 2rem, 1rem, 2rem);
+            @include padding(2rem, 2rem, 1rem, 2rem);
         }
 
         @media screen and (max-width: 540px) {
             width: 100%;
-            padding-top: .25rem;
+            padding-top: 0.25rem;
         }
     }
 }

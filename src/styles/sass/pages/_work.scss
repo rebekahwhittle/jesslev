@@ -2,13 +2,12 @@
     flex-direction: column;
 
     .portfolio-row {
-        @include flex-direction-justify (flex, row, space-evenly);
+        @include flex-direction-justify(flex, row, space-evenly);
     }
 
     .portfolio-content {
-
         img {
-            padding: .5rem;
+            padding: 0.5rem;
         }
     }
 }

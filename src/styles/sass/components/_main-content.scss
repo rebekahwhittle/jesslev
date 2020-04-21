@@ -16,11 +16,11 @@
     }
 
     .content-container {
-        @include flex-direction-justify (flex, row, space-between);
+        @include flex-direction-justify(flex, row, space-between);
         width: 100%;
 
         .content {
-            @include flex-direction-justify (flex, row, space-evenly);
+            @include flex-direction-justify(flex, row, space-evenly);
 
             width: 100%;
             min-height: 83vh;
@@ -32,17 +32,17 @@
             width: 40%;
 
             .nav-tab-image {
-
                 .nav-tab-text {
                     opacity: 0;
+                    transition: 0.5s ease;
+
                     position: absolute;
-                    top: 50%;
                     text-decoration: none;
-    
+
                     transform: translate(-50%, -50%);
                     text-align: center;
-    
-                    font-family: 'Montserrat';
+
+                    font-family: "Montserrat";
                     font-size: 48px;
                     font-weight: 600;
                 }
@@ -55,35 +55,36 @@
                     right: 3%;
                 }
 
+                .nav-tab-text.digital {
+                    top: 23%;
+                    left: 26%;
 
-                .digital {
-                    &:hover {
-                        background-color: #a43c1f;
-                        transition: ease-in-out 0.4s;
-                    }
+                    color: #a43c1f;
                 }
-                .paintings {
-                    &:hover {
-                        background-color: #202534;
-                        transition: ease-in-out 0.4s;
-                    }
+
+                .nav-tab-text.paintings {
+                    top: 23%;
+                    right: 4%;
+                    color: #202534;
                 }
-                .animations {
-                    &:hover {
-                        background-color: #f07801;
-                        transition: ease-in-out 0.4s;
-                    }
+
+                .nav-tab-text.animations {
+                    top: 75%;
+                    left: 27%;
+                    color: #f07801;
                 }
-                .ripe {
-                    &:hover {
-                        background-color: #8a1176;
-                        transition: ease-in-out 0.4s;
-                    }
+
+                .nav-tab-text.ripe {
+                    top: 75%;
+                    right: 16%;
+                    color: #8a1176;
                 }
             }
+
             img {
                 width: 100%;
                 height: 100%;
+                transition: 0.5s ease;
             }
 
             video {
@@ -92,8 +93,12 @@
             }
         }
 
-        .image-content:hover .nav-tab-text {
+        .worknav-tab:hover .nav-tab-text {
             opacity: 1;
+        }
+
+        .worknav-tab:hover img {
+            opacity: 0.3;
         }
 
         .text-content {

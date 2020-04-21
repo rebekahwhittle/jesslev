@@ -9,29 +9,46 @@ import Animations from "./animations";
 import Ripe from "./ripe";
 
 function WorkNav() {
-  return (
-    
-    <div className="container work">
-      <div className="wrapper work">
-        <main className="main-content">
-          <div className="content-container">
-            <div id="work-page" className="work-page content visible">
-                <Router>
-                    <Switch>
-                        <Route exact path='/work/digital' component={Digital}/>
-                        <Route exact path='/work/paintings' component={Paintings}/>
-                        <Route exact path='/work/animations' component={Animations}/>
-                        <Route exact path='/work/ripe' component={Ripe}/>
-                        <Route path='/' component={Work}/>
-                    </Switch>
-                </Router>
+    return (
+        <div className="container work">
+            <div className="wrapper work">
+                <main className="main-content">
+                    <div className="content-container">
+                        <div
+                            id="work-page"
+                            className="work-page content visible"
+                        >
+                            <Router>
+                                <Switch>
+                                    <Route
+                                        exact
+                                        path="/work/digital"
+                                        component={Digital}
+                                    />
+                                    <Route
+                                        exact
+                                        path="/work/paintings"
+                                        component={Paintings}
+                                    />
+                                    <Route
+                                        exact
+                                        path="/work/animations"
+                                        component={Animations}
+                                    />
+                                    <Route
+                                        exact
+                                        path="/work/ripe"
+                                        component={Ripe}
+                                    />
+                                    <Route path="/" component={Work} />
+                                </Switch>
+                            </Router>
+                        </div>
+                    </div>
+                </main>
             </div>
-          </div>
-        </main>
-      </div>
-    </div>
-
-  );
+        </div>
+    );
 }
 
 export default WorkNav;

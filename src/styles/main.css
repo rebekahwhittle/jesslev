@@ -195,8 +195,8 @@
 }
 .main-content .content-container .image-content .nav-tab-image .nav-tab-text {
   opacity: 0;
+  transition: 0.5s ease;
   position: absolute;
-  top: 50%;
   text-decoration: none;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -210,32 +210,40 @@
 .main-content .content-container .image-content .nav-tab-image .nav-tab-text.right {
   right: 3%;
 }
-.main-content .content-container .image-content .nav-tab-image .digital:hover {
-  background-color: #a43c1f;
-  transition: ease-in-out 0.4s;
+.main-content .content-container .image-content .nav-tab-image .nav-tab-text.digital {
+  top: 23%;
+  left: 26%;
+  color: #a43c1f;
 }
-.main-content .content-container .image-content .nav-tab-image .paintings:hover {
-  background-color: #202534;
-  transition: ease-in-out 0.4s;
+.main-content .content-container .image-content .nav-tab-image .nav-tab-text.paintings {
+  top: 23%;
+  right: 4%;
+  color: #202534;
 }
-.main-content .content-container .image-content .nav-tab-image .animations:hover {
-  background-color: #f07801;
-  transition: ease-in-out 0.4s;
+.main-content .content-container .image-content .nav-tab-image .nav-tab-text.animations {
+  top: 75%;
+  left: 27%;
+  color: #f07801;
 }
-.main-content .content-container .image-content .nav-tab-image .ripe:hover {
-  background-color: #8a1176;
-  transition: ease-in-out 0.4s;
+.main-content .content-container .image-content .nav-tab-image .nav-tab-text.ripe {
+  top: 75%;
+  right: 16%;
+  color: #8a1176;
 }
 .main-content .content-container .image-content img {
   width: 100%;
   height: 100%;
+  transition: 0.5s ease;
 }
 .main-content .content-container .image-content video {
   width: 100%;
   height: 100%;
 }
-.main-content .content-container .image-content:hover .nav-tab-text {
+.main-content .content-container .worknav-tab:hover .nav-tab-text {
   opacity: 1;
+}
+.main-content .content-container .worknav-tab:hover img {
+  opacity: 0.3;
 }
 .main-content .content-container .text-content {
   width: 50%;

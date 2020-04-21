@@ -1,8 +1,8 @@
 .container {
-    @include flex-direction-justify (flex, row, space-between);
+    @include flex-direction-justify(flex, row, space-between);
     width: 100%;
     min-height: 100vh;
-    // opacity: 1; 
+    // opacity: 1;
     // transform: translate3d(0px, 100%, 0px);
 }
 
@@ -36,12 +36,12 @@
 
 .container.about {
     background-color: $tan-300-jl;
-    background-image: url('../assets/svg/about-jesslev.svg');
+    background-image: url("../assets/svg/about-jesslev.svg");
     background-size: cover;
 }
 
 .container.contact {
     background-color: $blue-300-jl;
-    background-image: url('../assets/svg/contact-jesslev.svg');
+    background-image: url("../assets/svg/contact-jesslev.svg");
     background-size: cover;
 }
