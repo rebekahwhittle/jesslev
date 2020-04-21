@@ -193,6 +193,23 @@
 .main-content .content-container .image-content {
   width: 40%;
 }
+.main-content .content-container .image-content .nav-tab-image .nav-tab-text {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  text-decoration: none;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-weight: 600;
+}
+.main-content .content-container .image-content .nav-tab-image .nav-tab-text.left {
+  left: 27%;
+}
+.main-content .content-container .image-content .nav-tab-image .nav-tab-text.right {
+  right: 3%;
+}
 .main-content .content-container .image-content .nav-tab-image .digital:hover {
   background-color: #a43c1f;
   transition: ease-in-out 0.4s;
@@ -216,6 +233,9 @@
 .main-content .content-container .image-content video {
   width: 100%;
   height: 100%;
+}
+.main-content .content-container .image-content:hover .nav-tab-text {
+  opacity: 1;
 }
 .main-content .content-container .text-content {
   width: 50%;

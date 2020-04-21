@@ -12,15 +12,17 @@ function Work() {
         <div className="portfolio-content image-content">
           <Link id="digital" className="nav-tab-image" to="/work/digital">
             <img className="digital" src={process.env.PUBLIC_URL + "/worknav/1.png"} />
+            <div className="nav-tab-text left">Digital</div>
           </Link>
         </div>
         <div className="portfolio-content image-content">
-         <Link id="digital" className="nav-tab-image" to="/work/paintings">
-          <img className="paintings" src={process.env.PUBLIC_URL + "/worknav/2.png"} />
-         </Link>
+          <Link id="digital" className="nav-tab-image" to="/work/paintings">
+            <img className="paintings" src={process.env.PUBLIC_URL + "/worknav/2.png"} />
+            <div className="nav-tab-text right">Paintings</div>
+          </Link>
         </div>
       </div>
-      <div className="portfolio-row">
+      {/* <div className="portfolio-row">
         <div className="portfolio-content image-content">
           <Link id="digital" className="nav-tab-image" to="/work/animations">
             <img className="animations" src={process.env.PUBLIC_URL + "/worknav/3.png"} />
@@ -31,7 +33,7 @@ function Work() {
             <img className="ripe" src={process.env.PUBLIC_URL + "/worknav/4.png"} />
           </Link>
         </div>
-      </div>
+      </div> */}
   </div>
   );
 }
