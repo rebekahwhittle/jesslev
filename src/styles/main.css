@@ -514,6 +514,7 @@
   font-style: bold;
   line-height: 24px;
   color: #d1423c;
+  margin-bottom: 2rem;
 }
 @media screen and (max-width: 540px) {
   #contact-page .text-content p {
@@ -524,6 +525,14 @@
   #contact-page .text-content p {
     font-size: 14px;
   }
+}
+#contact-page .text-content p a {
+  text-decoration: none;
+  color: inherit;
+}
+#contact-page .text-content p a:hover {
+  color: #a3322e;
+  transition: ease-in-out 0.5s;
 }
 @media screen and (max-width: 1240px) {
   #contact-page .text-content {

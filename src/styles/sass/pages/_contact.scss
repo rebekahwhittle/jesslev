@@ -75,6 +75,7 @@
             font-style: bold;
             line-height: 24px;
             color: $red-300-jl;
+            margin-bottom: 2rem;
 
             @media screen and (max-width: 540px) {
                 font-size: 18px;
@@ -82,6 +83,16 @@
 
             @media screen and (max-width: 410px) {
                 font-size: 14px;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+
+                &:hover {
+                    color: #a3322e;
+                    transition: ease-in-out 0.5s;
+                }
             }
         }
 

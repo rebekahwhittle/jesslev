@@ -23,13 +23,13 @@ function Contact() {
                             <div className="text-content">
                                 <div className="contact-label">
                                     <p>Email</p>
-                                    <p>Phone</p>
                                     <p>Instagram</p>
+                                    <p>LinkedIn</p>
                                 </div>
                                 <div class="contact-info">
-                                    <p>jessicadlev@gmail.com</p>
-                                    <p>‭(402) 802-2465‬</p>
-                                    <p>@mechanicalbully</p>
+                                    <p><a href="mailto:jessicadlev@gmail.com">jessicadlev@gmail.com</a></p>
+                                    <p><a target="_blank" href="https://www.instagram.com/mechanicalbully/">@mechanicalbully</a></p>
+                                    <p><a target="_blank" href="https://www.linkedin.com/in/jessica-levtsenyuk-728156112/">Jessica Levtsenyuk</a></p>
                                 </div>
                             </div>
                         </div>
