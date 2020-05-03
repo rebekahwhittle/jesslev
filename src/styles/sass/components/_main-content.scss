@@ -67,26 +67,73 @@
                 .nav-tab-text.digital {
                     top: 23%;
                     left: 26%;
-
                     color: #a43c1f;
+
+                    @media screen and (max-width: 1024px) {
+                        font-weight: 600;
+                        top: 33%;
+                        left: 26%;
+                        color: #a43c1f;
+                        font-size: 24px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        font-size: 18px;
+                    }
                 }
 
                 .nav-tab-text.paintings {
                     top: 23%;
                     right: 4%;
                     color: #202534;
+
+                    @media screen and (max-width: 1024px) {
+                        font-weight: 600;
+                        top: 33%;
+                        right: 4%;
+                        color: #202534;
+                        font-size: 24px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        font-size: 18px;
+                    }
                 }
 
                 .nav-tab-text.animations {
                     top: 75%;
                     left: 27%;
                     color: #f07801;
+
+                    @media screen and (max-width: 1024px) {
+                        font-weight: 600;
+                        top: 65%;
+                        left: 27%;
+                        color: #f07801;
+                        font-size: 24px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        font-size: 18px;
+                    }
                 }
 
                 .nav-tab-text.ripe {
                     top: 75%;
                     right: 16%;
                     color: #8a1176;
+
+                    @media screen and (max-width: 1024px) {
+                        font-weight: 600;
+                        top: 65%;
+                        right: 16%;
+                        color: #8a1176;
+                        font-size: 24px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        font-size: 18px;
+                    }
                 }
             }
 

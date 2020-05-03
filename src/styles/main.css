@@ -238,20 +238,76 @@
   left: 26%;
   color: #a43c1f;
 }
+@media screen and (max-width: 1024px) {
+  .main-content .content-container .image-content .nav-tab-image .nav-tab-text.digital {
+    font-weight: 600;
+    top: 33%;
+    left: 26%;
+    color: #a43c1f;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main-content .content-container .image-content .nav-tab-image .nav-tab-text.digital {
+    font-size: 18px;
+  }
+}
 .main-content .content-container .image-content .nav-tab-image .nav-tab-text.paintings {
   top: 23%;
   right: 4%;
   color: #202534;
+}
+@media screen and (max-width: 1024px) {
+  .main-content .content-container .image-content .nav-tab-image .nav-tab-text.paintings {
+    font-weight: 600;
+    top: 33%;
+    right: 4%;
+    color: #202534;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main-content .content-container .image-content .nav-tab-image .nav-tab-text.paintings {
+    font-size: 18px;
+  }
 }
 .main-content .content-container .image-content .nav-tab-image .nav-tab-text.animations {
   top: 75%;
   left: 27%;
   color: #f07801;
 }
+@media screen and (max-width: 1024px) {
+  .main-content .content-container .image-content .nav-tab-image .nav-tab-text.animations {
+    font-weight: 600;
+    top: 65%;
+    left: 27%;
+    color: #f07801;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main-content .content-container .image-content .nav-tab-image .nav-tab-text.animations {
+    font-size: 18px;
+  }
+}
 .main-content .content-container .image-content .nav-tab-image .nav-tab-text.ripe {
   top: 75%;
   right: 16%;
   color: #8a1176;
+}
+@media screen and (max-width: 1024px) {
+  .main-content .content-container .image-content .nav-tab-image .nav-tab-text.ripe {
+    font-weight: 600;
+    top: 65%;
+    right: 16%;
+    color: #8a1176;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main-content .content-container .image-content .nav-tab-image .nav-tab-text.ripe {
+    font-size: 18px;
+  }
 }
 .main-content .content-container .image-content img {
   width: 100%;
