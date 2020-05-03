@@ -6,27 +6,12 @@ function Digital() {
     return (
         <div>
             <div className="portfolio-row">
-                <div className="portfolio-content image-content">
+            <div className="portfolio-content image-content">
                     <img
                         src={
                             process.env.PUBLIC_URL +
-                            "/portfolio/autumn-girl.png"
+                            "/portfolio/women-print.png"
                         }
-                    />
-                </div>
-                <div className="portfolio-content image-content">
-                    <img
-                        src={
-                            process.env.PUBLIC_URL +
-                            "/portfolio/japanese-circle.png"
-                        }
-                    />
-                </div>
-            </div>
-            <div className="portfolio-row">
-                <div className="portfolio-content image-content">
-                    <img
-                        src={process.env.PUBLIC_URL + "/portfolio/lobster.png"}
                     />
                 </div>
                 <div className="portfolio-content image-content">
@@ -34,39 +19,6 @@ function Digital() {
                         src={
                             process.env.PUBLIC_URL +
                             "/portfolio/mechanical-bully.png"
-                        }
-                    />
-                </div>
-            </div>
-            <div className="portfolio-row">
-                <div className="portfolio-content image-content">
-                    <img
-                        src={
-                            process.env.PUBLIC_URL +
-                            "/portfolio/multi-girls.png"
-                        }
-                    />
-                </div>
-                <div className="portfolio-content image-content">
-                    <img
-                        src={
-                            process.env.PUBLIC_URL +
-                            "/portfolio/shrimp-cocktail.png"
-                        }
-                    />
-                </div>
-            </div>
-            <div className="portfolio-row">
-                <div className="portfolio-content image-content">
-                    <img
-                        src={process.env.PUBLIC_URL + "/portfolio/texan.png"}
-                    />
-                </div>
-                <div className="portfolio-content image-content">
-                    <img
-                        src={
-                            process.env.PUBLIC_URL +
-                            "/portfolio/women-print.png"
                         }
                     />
                 </div>
@@ -187,7 +139,7 @@ function Digital() {
                 </div>
                 <div className="portfolio-content image-content">
                     <img
-                        src={process.env.PUBLIC_URL + "/portfolio/jl_20.png"}
+                        src={process.env.PUBLIC_URL + "/portfolio/autumn-girl.png"}
                     />
                 </div>
             </div>
