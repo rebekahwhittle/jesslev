@@ -35,5 +35,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "> A portfolio site for illustrator Jessica Levtsenyuk.",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rebekahwhittle/jesslev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rebekahwhittle/jesslev/issues"
+  },
+  "homepage": "https://github.com/rebekahwhittle/jesslev#readme"
 }
