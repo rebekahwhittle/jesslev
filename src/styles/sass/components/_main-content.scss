@@ -36,6 +36,10 @@
         .image-content {
             width: 40%;
 
+            @media screen and (max-width: 740px) {
+                width: 50%;
+            }
+
             .nav-tab-image {
                 .nav-tab-text {
                     opacity: 0;

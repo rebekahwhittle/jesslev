@@ -28,6 +28,7 @@
     max-width: 100%;
     justify-content: space-between;
     min-height: 0;
+    height: fit-content;
   }
 }
 .navigation-wrapper .logo {
@@ -209,6 +210,11 @@
 }
 .main-content .content-container .image-content {
   width: 40%;
+}
+@media screen and (max-width: 740px) {
+  .main-content .content-container .image-content {
+    width: 50%;
+  }
 }
 .main-content .content-container .image-content .nav-tab-image .nav-tab-text {
   opacity: 0;
