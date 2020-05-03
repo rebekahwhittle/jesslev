@@ -80,6 +80,8 @@
 .navigation-wrapper .navigation .nav-tab a {
   text-decoration: none;
   cursor: pointer;
+  color: inherit;
+  font-size: inherit;
 }
 @media screen and (max-width: 740px) {
   .navigation-wrapper .navigation .nav-tab a {
@@ -92,17 +94,29 @@
     padding-left: 12px;
   }
 }
+@media screen and (max-width: 400px) {
+  .navigation-wrapper .navigation .nav-tab {
+    padding-left: 5px;
+  }
+}
 .navigation-wrapper .navigation .nav-tab:hover {
   color: #a3322e;
   transition: ease-in-out 0.5s;
 }
 @media screen and (max-width: 1024px) {
   .navigation-wrapper .navigation {
-    padding-bottom: 0;
+    padding-bottom: 20;
   }
 }
 @media screen and (max-width: 740px) {
   .navigation-wrapper .navigation {
+    margin-left: 5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navigation-wrapper .navigation {
+    margin-left: 1.5rem;
     padding-bottom: 1.5rem;
   }
 }
