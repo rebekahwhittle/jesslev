@@ -5,9 +5,14 @@
     position: relative;
     left: 8rem;
 
+    @media screen and (max-width: 1240px) {
+        max-width: 80%;
+    }
+
     @media screen and (max-width: 740px) {
         margin-top: 0;
         left: 0;
+        max-width: 100%;
     }
 
     .visible {

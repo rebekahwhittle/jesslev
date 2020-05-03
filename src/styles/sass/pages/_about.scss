@@ -42,7 +42,7 @@
         flex: 1;
 
         h2 {
-            font-size: 48px;
+            font-size: 38px;
             font-family: "Montserrat";
             padding-bottom: 1rem;
 
@@ -52,12 +52,12 @@
         }
 
         p {
-            font: 24px;
+            font-size: 16px;
             font-family: "Montserrat";
             line-height: 24px;
 
             @media screen and (max-width: 540px) {
-                font-size: 18px;
+                font-size: 12px;
             }
         }
 

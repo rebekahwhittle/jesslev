@@ -19,6 +19,7 @@
 @media screen and (max-width: 1024px) {
   .navigation-wrapper {
     min-height: 80vh;
+    left: 1rem;
   }
 }
 @media screen and (max-width: 740px) {
@@ -27,7 +28,6 @@
     max-width: 100%;
     justify-content: space-between;
     min-height: 0;
-    position: relative;
   }
 }
 .navigation-wrapper .logo {
@@ -165,10 +165,16 @@
   position: relative;
   left: 8rem;
 }
+@media screen and (max-width: 1240px) {
+  .main-content {
+    max-width: 80%;
+  }
+}
 @media screen and (max-width: 740px) {
   .main-content {
     margin-top: 0;
     left: 0;
+    max-width: 100%;
   }
 }
 .main-content .visible {
@@ -381,7 +387,7 @@
   flex: 1;
 }
 #about-page .text-content h2 {
-  font-size: 48px;
+  font-size: 38px;
   font-family: "Montserrat";
   padding-bottom: 1rem;
 }
@@ -391,13 +397,13 @@
   }
 }
 #about-page .text-content p {
-  font: 24px;
+  font-size: 16px;
   font-family: "Montserrat";
   line-height: 24px;
 }
 @media screen and (max-width: 540px) {
   #about-page .text-content p {
-    font-size: 18px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 1240px) {
