@@ -19,7 +19,7 @@ function Work() {
                             className="digital"
                             src={
                                 process.env.PUBLIC_URL +
-                                "/portfolio/lobster.png"
+                                "/portfolio/jl_01.png"
                             }
                         />
                         <div className="nav-tab-text digital">Digital</div>
@@ -34,7 +34,7 @@ function Work() {
                         <img
                             className="paintings"
                             src={
-                                process.env.PUBLIC_URL + "/paintings/jl_05.png"
+                                process.env.PUBLIC_URL + "/paintings/jl_03.png"
                             }
                         />
                         <div className="nav-tab-text paintings">Paintings</div>
@@ -52,7 +52,7 @@ function Work() {
                             className="animations"
                             src={
                                 process.env.PUBLIC_URL +
-                                "/portfolio/animation.png"
+                                "/portfolio/jl_00.png"
                             }
                         />
                         <div className="nav-tab-text animations">
@@ -68,7 +68,7 @@ function Work() {
                     >
                         <img
                             className="ripe"
-                            src={process.env.PUBLIC_URL + "/ripe/IMG_0373.png"}
+                            src={process.env.PUBLIC_URL + "/ripe/IMG_0372.png"}
                         />
                         <div className="nav-tab-text ripe">Ripe</div>
                     </Link>
