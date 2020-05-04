@@ -34,7 +34,7 @@ function Ripe() {
                     <img src={process.env.PUBLIC_URL + "/ripe/IMG_0382.png"} />
                 </div>
             </div>
-            {/* <div className="portfolio-row">
+            <div className="portfolio-row">
                 <div className="portfolio-content image-content">
                     <img src={process.env.PUBLIC_URL + "/ripe/IMG_0404.png"} />
                 </div>
@@ -73,7 +73,7 @@ function Ripe() {
                 <div className="portfolio-content image-content">
                     <img src={process.env.PUBLIC_URL + "/ripe/IMG_0366.png"} />
                 </div>
-            </div> */}
+            </div>
         </div>
     );
 }
