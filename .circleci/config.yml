@@ -1,45 +1,126 @@
 version: 2.1
 
-executors: 
-  my-executor: 
-    docker:
-      - image: circleci/node:8
+orbs:
+  hello-build: circleci/hello-build@0.0.14
 
-jobs: 
-  flow:
-    executor: my-executor
-    steps: 
-      - checkout 
-      
-      - setup_remote_docker
+executors:
+  node:
+    docker: 
+      - image: circleci/node:latest
 
+jobs:
+  build: 
+    executor:
+      name: node
+    working_directory: /tmp
+    steps:
       - run: mkdir -p workspace
       - run: echo "Hello, world!" > workspace/echo-output
-
       - persist_to_workspace:
           root: workspace
           paths:
             - echo-output
+      - run:
+          name: Creating Dummy Artifacts
+          command: |
+            echo "my artifact file" > /tmp/artifact-1;
+            mkdir /tmp/artifacts;
+            echo "my artifact files in a dir" > /tmp/artifacts/artifact-2;
+      - store_artifacts:
+          path: /tmp/artifact-1
+          destination: artifact-file
+      - store_artifacts:
+          path: /tmp/artifacts
 
-  downstream: 
-    executor: my-executor
+  test: 
+    executor:
+      name: node
+    parallelism: 3
     steps:
+      - checkout
       - attach_workspace:
-          at: workspace
-
+          at: /tmp/workspace
       - run: |
-          if [[ `cat workspace/echo-output` == "Hello, world!" ]]; then
+          if [[ `cat /tmp/workspace/echo-output` == "Hello, world!" ]]; then
             echo "It worked!";
           else
             echo "Nope!"; exit 1
           fi
+      - restore_cache:
+          keys:
+            - node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
+            - node-v1-{{ .Branch }}-
+            - node-v1-
+      - run: npm install
+      - save_cache:
+          paths:
+            - ~/usr/local/lib/node_modules
+          key: node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
+    
+  env_exp: 
+    executor:
+      name: node
+    steps:
+      - checkout
+      - run: 
+          name: "Setup custom environment variables"
+          command: echo 'export MY_ENV_VAR="FOO"' >> $BASH_ENV
+      - run: 
+          name: "What branch am I on?"
+          command: echo ${CIRCLE_BRANCH}
+      - run:
+          name: "What branch am I on now?"
+          command: echo $CIRCLE_BRANCH
+      - run:
+          name: "What was my custom environment variable?"
+          command: echo ${MY_ENV_VAR}
+      - run:
+          name: "Print an env var stored in the Project"
+          command: echo ${PROJECT_ENV_VAR}
+      - run:
+          name: "Print an env var stored in a Context"
+          command: echo ${CONTEXT_ENV_VAR}
+
+
+  approval:     
+    executor:
+      name: node
+    steps: 
+      - run: echo "please approve this job"
+
+  deploy:     
+    executor:
+      name: node
+    steps: 
+      - run: echo "deploying"
 
 workflows: 
   version: 2.1
-
-  btd: 
+  hello_world: 
     jobs: 
-      - flow
-      - downstream:
+      - hello-build/hello-build
+  build_test_deploy: 
+    jobs: 
+      - build
+      - test: 
+          requires: 
+            - build
+      - env_exp: 
+          context: HASHICORP_DEMO
+          requires: 
+            - build
+      - approval:
+          type: approval
+          filters:
+            branches:
+              only: master
           requires:
-            - flow
+            - test
+            - env_exp
+      - deploy:
+          filters:
+            branches:
+              only: master
+          requires:
+            - approval
+
