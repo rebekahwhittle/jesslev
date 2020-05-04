@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  hello-build: circleci/hello-build@0.0.14
+  heroku: circleci/heroku@1.0.1
 
 executors:
   node:
@@ -81,24 +81,25 @@ jobs:
           name: "Print an env var stored in a Context"
           command: echo ${CONTEXT_ENV_VAR}
 
-
   approval:     
     executor:
       name: node
     steps: 
       - run: echo "please approve this job"
 
-  deploy:     
-    executor:
-      name: node
-    steps: 
-      - run: echo "deploying"
+  deploy:
+    executor: heroku/default
+    steps:
+      - checkout
+      - heroku/install
+      - run:
+          command: >
+            echo "The command above installs Heroku, the command below deploys.
+            What you do inbetween is up to you!"
+      - heroku/deploy-via-git
 
 workflows: 
   version: 2.1
-  hello_world: 
-    jobs: 
-      - hello-build/hello-build
   build_test_deploy: 
     jobs: 
       - build
