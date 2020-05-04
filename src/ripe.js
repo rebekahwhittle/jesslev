@@ -31,7 +31,7 @@ function Ripe() {
                     <img src={process.env.PUBLIC_URL + "/ripe/ripe06.png"} />
                 </div>
                 <div className="portfolio-content image-content">
-                    <img src={process.env.PUBLIC_URL + "/ripe/ripe07.png"} />
+                    <img src={process.env.PUBLIC_URL + "/ripe/ripe08.png"} />
                 </div>
             </div>
             <div className="portfolio-row">
