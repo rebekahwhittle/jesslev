@@ -7,7 +7,7 @@ function Ripe() {
         <div>
             <div className="portfolio-row">
                 <div className="portfolio-content image-content">
-                    <img src={process.env.PUBLIC_URL + "/ripe/IMG_0368.png"} />
+                    <img src={process.env.PUBLIC_URL + "/ripe/ripe01.png"} />
                 </div>
             </div>
             <div className="portfolio-row">
