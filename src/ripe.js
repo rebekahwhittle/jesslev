@@ -12,7 +12,7 @@ function Ripe() {
             </div>
             <div className="portfolio-row">
                 <div className="portfolio-content image-content">
-                    <img src={process.env.PUBLIC_URL + "/ripe/IMG_0369.png"} />
+                    <img src={process.env.PUBLIC_URL + "/ripe/ripe03.png"} />
                 </div>
                 <div className="portfolio-content image-content">
                     <img src={process.env.PUBLIC_URL + "/ripe/ripe02.png"} />
@@ -20,18 +20,18 @@ function Ripe() {
             </div>
             <div className="portfolio-row">
                 <div className="portfolio-content image-content">
-                    <img src={process.env.PUBLIC_URL + "/ripe/IMG_0373.png"} />
+                    <img src={process.env.PUBLIC_URL + "/ripe/ripe04.png"} />
                 </div>
                 <div className="portfolio-content image-content">
-                    <img src={process.env.PUBLIC_URL + "/ripe/IMG_0374.png"} />
+                    <img src={process.env.PUBLIC_URL + "/ripe/ripe05.png"} />
                 </div>
             </div>
             <div className="portfolio-row">
                 <div className="portfolio-content image-content">
-                    <img src={process.env.PUBLIC_URL + "/ripe/IMG_0375.png"} />
+                    <img src={process.env.PUBLIC_URL + "/ripe/ripe06.png"} />
                 </div>
                 <div className="portfolio-content image-content">
-                    <img src={process.env.PUBLIC_URL + "/ripe/IMG_0382.png"} />
+                    <img src={process.env.PUBLIC_URL + "/ripe/ripe07.png"} />
                 </div>
             </div>
             <div className="portfolio-row">
