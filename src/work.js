@@ -68,7 +68,7 @@ function Work() {
                     >
                         <img
                             className="ripe"
-                            src={process.env.PUBLIC_URL + "/ripe/IMG_0372.png"}
+                            src={process.env.PUBLIC_URL + "/ripe/ripe02.png"}
                         />
                         <div className="nav-tab-text ripe">Ripe</div>
                     </Link>
