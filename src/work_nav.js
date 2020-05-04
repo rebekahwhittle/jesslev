@@ -40,7 +40,7 @@ function WorkNav() {
                                         path="/work/ripe"
                                         component={Ripe}
                                     />
-                                    <Route path="/" component={Work} />
+                                    <Route path="/work" component={Work} />
                                 </Switch>
                             </Router>
                         </div>
