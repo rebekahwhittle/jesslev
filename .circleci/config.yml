@@ -35,6 +35,7 @@ jobs:
   test: 
     executor:
       name: node
+    parallelism: 3
     steps:
       - checkout
       - attach_workspace:
